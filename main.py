@@ -11,7 +11,7 @@ userId = user['uuid']
 deviceId = "a remplir"
 tabId = "a remplir"
 deviceTabId = "a remplir"
-PortalId = "a remplir"
+PortalId = "7449c9c9-6523-4e16-9767-00a775969c12"
 
 
 def get_user_info():
