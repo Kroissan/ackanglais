@@ -124,6 +124,14 @@ def solve_quizz(article):
                 "attributes": {"CourseId": article['articleId']}}
     track_event(savejson)
 
+
+def oppen_content(content):
+    track_event()
+def ping(content):
+    portal_track_event({"portalEvent":{"category": "control", "contentId":content, "topicId":get_topic_from_content(content)}});
+    portal_track_event({"type":"PortalTabPresence", "topicId":get_topic_from_content(content)})
+
+
 for a in get_video_list(0):
     art=get_article_info(a)
     if is_quizz_passed(get_quiz(art)) == False:
